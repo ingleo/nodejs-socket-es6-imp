@@ -30,6 +30,7 @@ socket.on('message-event', (payload) => {
 
 btnSend.addEventListener('click', () => {
   const message = txtMessage.value;
+  txtMessage.value = '';
 
   const payload = {
     message,
