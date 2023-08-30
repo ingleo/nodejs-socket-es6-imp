@@ -65,3 +65,11 @@ function addMessageToChat(message, subject) {
     newDiv.appendChild(document.createElement('br'));
   }
 }
+
+txtMessage.addEventListener('keypress', (event) =>  {
+    if (event.key == 'Enter') {
+        event.preventDefault();
+
+        btnSend.click();
+    }
+})
